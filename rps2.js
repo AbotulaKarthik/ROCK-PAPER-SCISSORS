@@ -28,7 +28,8 @@ function playGame(userChoice){
     if (userChoice===computerChoice){
         matchDraw();
     }else if ((userChoice==="rock" && computerChoice==="paper") ||
-            (userChoice==="paper" && computerChoice==="scissor") ){
+            (userChoice==="paper" && computerChoice==="scissor") ||
+             (userChoice==="scissor" && computerChoice==="rock"){
                 userWin = false;
                 checkWinner(userWin);
     }else{
